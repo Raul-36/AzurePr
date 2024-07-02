@@ -17,7 +17,7 @@ app.UseHttpsRedirection();
 
 app.MapGet("/weatherforecast", () =>
 {
-   
+   return 0;
 })
 .WithName("GetWeatherForecast")
 .WithOpenApi();
