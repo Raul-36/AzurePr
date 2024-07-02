@@ -10,7 +10,7 @@ namespace AzurePr.Rep
 {
     public class UserRep
     {
-        private readonly string conectString ="Server=tcp:azureprsdevdb.database.windows.net,1433;Initial Catalog=AzurePrRgDevDb;Persist Security Info=False;User ID=Admin1;Password={your_password};MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
+        private readonly string conectString ="Server=tcp:azureprsdevdb.database.windows.net,1433;Initial Catalog=AzurePrRgDevDb;Persist Security Info=False;User ID=Admin1;Password={your_password};MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
     
         public async Task<IEnumerable<User>> GetAll() {
             var connection = new SqlConnection(conectString);
